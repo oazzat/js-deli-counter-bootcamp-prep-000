@@ -1,3 +1,5 @@
+var ticketNumber = 0
+
 function takeANumber(array,name){
   var i=0
   array.push(name)
@@ -15,6 +17,13 @@ function nowServing(line){
     return "There is nobody waiting to be served!"
   }
   
+}
+
+function takeANumberAlternate (array){
+  ticketNumber += 1
+  array.push(ticketNumber)
+  
+  return `You are number ${ticketNumber}`
 }
 
 function currentLine (line){
